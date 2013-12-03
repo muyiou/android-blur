@@ -1,23 +1,16 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFF"
-    android:gravity="center_horizontal"
-    android:orientation="vertical" >
+<?xml version="1.0" encoding="utf-8"?>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:scaleType="centerCrop"
-        android:layout_height="match_parent"
-        android:src="@drawable/launch_bg"
-        />
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="match_parent"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_height="wrap_content"
-        android:max="10" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@drawable/launch_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:id="@+id/btn_choose_pic"
+            android:background="@drawable/yes_selector"
+            android:layout_centerInParent="true"
+            />
 
-</FrameLayout>
+</RelativeLayout>
